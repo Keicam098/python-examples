@@ -51,3 +51,36 @@ z = list(tuple_constructor)
 z.remove("monitor")
 tuple_constructor = tuple(z)
 tuple_constructor
+
+#usuwanie tupli mieszanej z pamięci 
+
+del mixed
+
+#destrukturyzowanie tupli czyli przypisywanie wartośći tupli do zmiennych
+print(fruits)
+(kiwi, orange, plum, apple) = fruits
+print(kiwi)
+print(orange)
+print(plum)
+print(apple)
+
+#destrukturyzacja przypisywanie zbioru wartości do tablic
+(first, second, *more) = numbers
+print(first)
+print(second)
+print(more)
+
+#łączenie 2 tupli w jedną nowa  tuple
+twoTuples = numbers + logic
+print(twoTuples)
+
+#zapisanie do nowej tupli zdwojonej tupli
+logic2 = logic *2
+print(logic2)
+
+#metoda count umożliwia zliczenie wystąpień danej wartości
+print(logic2.count(True))
+
+#metoda index umożliwia uzyskanie informacji na którym indeksie tupli znajduje się dana wartość
+print(numbers.index(6))
+
