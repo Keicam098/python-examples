@@ -52,3 +52,32 @@ print(car)
 #wyczyszczenie słownika
 dictConstructor.clear()
 print(dictConstructor)
+
+# skopiowanie słownika do nowej zmiennej 
+newCar = car.copy()
+newCar2 = dict(car)
+
+cars = {
+    "auto1": {
+        "producent": "Audi",
+        "model": "A3",
+        "rocznik": "2003"
+    },
+    "auto2": {
+        "producent": "BMW",
+        "model": "e36",
+        "rocznik": "1998"
+    },
+    "auto3": {
+        "producent": "Toyota",
+        "model": "Yaris",
+        "rocznik": "2009"
+    },
+    "auto4": {
+        "producent": "Fiat",
+        "model": "Punto",
+        "rocznik": "2007"
+    },
+}
+print(cars["auto2"]["producent"])
+print(cars["auto3"]["rocznik"])
